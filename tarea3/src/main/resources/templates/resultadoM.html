@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ingreso incorrecto</title>
+
+</head>
+
+<body>
+  <div>
+  <h1>Errores encontrados en la información solicitada</h1>
+	<div>
+       <p>Lista de errores</p>
+       		<table>
+            	<tr th:each="e : ${errores}">
+            		<td th:text="${e}" />
+            	</tr>
+            </table>
+    </div>
+   </div>
+</body>
+
+</html>

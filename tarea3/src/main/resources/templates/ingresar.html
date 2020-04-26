@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tarea 3-NCapas</title>
+</head>
+
+<body>
+      <div>
+			<h1>Ingreso de Nuevo Alumno</h1>
+            	<form method="post" th:action="@{/resultado}">
+	            	<div><label for="nombre">Nombres   </label><input id="nombre" type="text" placeholder="Ingresa tus nombres" style="width: 400px" name="nombre" /></div>
+	                <br></br>
+	                <div><label for="apellido">Apellidos   </label><input  id="apellido" type="text" placeholder="Ingrese tus apellidos" style="width: 400px" name="apellido"/></div>
+	                <br></br>
+	                <div><label for="fechaNac">Fecha de Nacimiento   </label><input id="fechaNac" type="date" placeholder="Ingresa tus fecha de nacimiento" style="width: 400px" name="fechaNac" /></div>
+	                <br></br>
+	                <div><label for="lugarNac">Lugar de Nacimiento   </label><input id="lugarNac" type="text" placeholder="Ingresa tu lugar de nacimiento" style="width: 400px" name="lugarNac" /></div>
+	                <br></br>
+	                <div><label for="colegio">Instituto o colegio de procedencia  </label><input id="colegio" type="text" placeholder="Ingresa tu instituto o colegio" style="width: 400px" name="colegio" /></div>
+	                <br></br>
+	                <div><label for="telFijo">Teléfono fijo   </label><input id="telFijo   " type="number" placeholder="Teléfono fijo" style="width: 400px" name="telFijo" /></div>
+	                <br></br>
+	                <div><label for="telMovil">Teléfono móvil    </label><input id="telMovil   " type="number" placeholder="Teléfono móvil" style="width: 400px" name="telMovil" /></div>
+      				<br></br>
+	                <div><input type="submit" value="Guardar alumno"></div>
+	            </form>
+      </div>
+</body>
+</html>
